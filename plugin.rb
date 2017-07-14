@@ -1,5 +1,5 @@
 module Plugins
-  module Diehard_FundOnboarding
+  module DiehardFundOnboarding
     class Plugin < Plugins::Base
       setup! 'diehard-dot-fund_onboarding' do |plugin|
         plugin.enabled = true
