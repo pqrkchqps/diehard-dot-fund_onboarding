@@ -1,7 +1,7 @@
 module Plugins
   module Diehard_FundOnboarding
     class Plugin < Plugins::Base
-      setup! :diehard_fund_onboarding do |plugin|
+      setup! 'diehard-dot-fund_onboarding' do |plugin|
         plugin.enabled = true
         plugin.use_component :group_progress_card, outlet: [:before_group_page_column_right, :before_thread_page_column_right]
         # plugin.use_component :user_progress_card, outlet: :after_user_username
