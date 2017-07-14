@@ -1,4 +1,4 @@
-angular.module('loomioApp').directive 'userProgressCard', ($translate, $location, Session, Records, IntercomService, ModalService, ChangePictureForm) ->
+angular.module('diehard_fundApp').directive 'userProgressCard', ($translate, $location, Session, Records, IntercomService, ModalService, ChangePictureForm) ->
   scope: {user: '='}
   restrict: 'E'
   templateUrl: 'generated/components/user_progress_card/user_progress_card.html'
@@ -31,7 +31,7 @@ angular.module('loomioApp').directive 'userProgressCard', ($translate, $location
     ]
 
     $scope.translationFor = (key) ->
-      $translate.instant("loomio_onboarding.user_progress_card.activities.#{key}")
+      $translate.instant("diehard_fund_onboarding.user_progress_card.activities.#{key}")
 
     $scope.$close = ->
       Records.users.saveExperience("dismissUserProgressCard")

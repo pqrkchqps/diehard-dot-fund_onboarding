@@ -1,7 +1,7 @@
 .lmo-blank
   %section.user-progress-card{ng-if: "show()"}>
     .user-progress-card__row
-      %h2#user-progress-card__title.lmo-card-heading{translate: "loomio_onboarding.user_progress_card.title"}
+      %h2#user-progress-card__title.lmo-card-heading{translate: "diehard_fund_onboarding.user_progress_card.title"}
       %material_modal_header_cancel_button
 
     %ul.user-progress-card__list
@@ -12,7 +12,7 @@
 
     .user-progress-card__celebration-message{ng-if: "setupComplete()"}
       %span> 🎉
-      %strong{translate: "loomio_onboarding.user_progress_card.celebration_message"}>
-      %a.lmo-pointer{ng-click: "$close()", translate: "loomio_onboarding.user_progress_card.dismiss_this_card"}
+      %strong{translate: "diehard_fund_onboarding.user_progress_card.celebration_message"}>
+      %a.lmo-pointer{ng-click: "$close()", translate: "diehard_fund_onboarding.user_progress_card.dismiss_this_card"}
 
     .sidebar__divider

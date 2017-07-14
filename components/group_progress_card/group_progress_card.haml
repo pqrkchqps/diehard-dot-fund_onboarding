@@ -1,7 +1,7 @@
 .lmo-blank
   %section.group-progress-card{ng-if: "show()"}>
     .group-progress-card__row
-      %h2#group-progress-card__title.lmo-card-heading{translate: "loomio_onboarding.group_progress_card.title"}
+      %h2#group-progress-card__title.lmo-card-heading{translate: "diehard_fund_onboarding.group_progress_card.title"}
       %material_modal_header_cancel_button
 
     %ul.group-progress-card__list
@@ -12,8 +12,8 @@
 
     .group-progress-card__celebration-message{ng-if: "setupComplete()"}
       %span> 🎉
-      %strong{translate: "loomio_onboarding.group_progress_card.celebration_message"}>
-      %a.lmo-pointer{ng-click: "$close()", translate: "loomio_onboarding.group_progress_card.dismiss_this_card"}
+      %strong{translate: "diehard_fund_onboarding.group_progress_card.celebration_message"}>
+      %a.lmo-pointer{ng-click: "$close()", translate: "diehard_fund_onboarding.group_progress_card.dismiss_this_card"}
 
-    %a.lmo-pointer.group-progress-card__learn-more{ng-href: "https://loomio.school", title: "{{ 'loomio_onboarding.group_progress_card.learn_more_title' | translate }}"}
-      %span{translate: "loomio_onboarding.group_progress_card.learn_more"}>
+    %a.lmo-pointer.group-progress-card__learn-more{ng-href: "https://diehard_fund.school", title: "{{ 'diehard_fund_onboarding.group_progress_card.learn_more_title' | translate }}"}
+      %span{translate: "diehard_fund_onboarding.group_progress_card.learn_more"}>

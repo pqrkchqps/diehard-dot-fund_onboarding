@@ -1,4 +1,4 @@
-angular.module('loomioApp').directive 'groupProgressCard', ($translate, Session, Records, IntercomService, ModalService, GroupForm, CoverPhotoForm, LogoPhotoForm, InvitationForm, DiscussionForm, PollCommonStartModal) ->
+angular.module('diehard_fundApp').directive 'groupProgressCard', ($translate, Session, Records, IntercomService, ModalService, GroupForm, CoverPhotoForm, LogoPhotoForm, InvitationForm, DiscussionForm, PollCommonStartModal) ->
   scope: { group: '=?', discussion: '=?' }
   restrict: 'E'
   templateUrl: 'generated/components/group_progress_card/group_progress_card.html'
@@ -39,7 +39,7 @@ angular.module('loomioApp').directive 'groupProgressCard', ($translate, Session,
     ]
 
     $scope.translationFor = (key) ->
-      $translate.instant("loomio_onboarding.group_progress_card.activities.#{key}")
+      $translate.instant("diehard_fund_onboarding.group_progress_card.activities.#{key}")
 
     $scope.$close = ->
       Records.memberships.saveExperience("dismissProgressCard", Session.user().membershipFor($scope.group))

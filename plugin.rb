@@ -1,12 +1,12 @@
 module Plugins
-  module LoomioOnboarding
+  module Diehard_FundOnboarding
     class Plugin < Plugins::Base
-      setup! :loomio_onboarding do |plugin|
+      setup! :diehard_fund_onboarding do |plugin|
         plugin.enabled = true
         plugin.use_component :group_progress_card, outlet: [:before_group_page_column_right, :before_thread_page_column_right]
         # plugin.use_component :user_progress_card, outlet: :after_user_username
 
-        plugin.use_translations 'config/locales', :loomio_onboarding
+        plugin.use_translations 'config/locales', :diehard_fund_onboarding
 
         plugin.use_test_route(:setup_progress_card_coordinator) do
           GroupService.create(group: create_group, actor: patrick)
