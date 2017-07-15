@@ -1,4 +1,4 @@
-angular.module('diehardFundApp').directive 'groupProgressCard', ($translate, Session, Records, IntercomService, ModalService, GroupModal, CoverPhotoForm, LogoPhotoForm, InvitationForm, DiscussionForm, PollCommonStartModal) ->
+angular.module('diehardFundApp').directive 'groupProgressCard', ($translate, Session, Records, IntercomService, ModalService, GroupModal, CoverPhotoForm, LogoPhotoForm, InvitationModal, DiscussionForm, PollCommonStartModal) ->
   scope: { group: '=?', discussion: '=?' }
   restrict: 'E'
   templateUrl: 'generated/components/group_progress_card/group_progress_card.html'
