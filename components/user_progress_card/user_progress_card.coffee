@@ -1,4 +1,4 @@
-angular.module('diehard_fundApp').directive 'userProgressCard', ($translate, $location, Session, Records, IntercomService, ModalService, ChangePictureForm) ->
+angular.module('diehardFundApp').directive 'userProgressCard', ($translate, $location, Session, Records, IntercomService, ModalService, ChangePictureForm) ->
   scope: {user: '='}
   restrict: 'E'
   templateUrl: 'generated/components/user_progress_card/user_progress_card.html'
